@@ -6,12 +6,12 @@ $result = mysqli_query($conn,"SELECT * FROM students");
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title> Hackatron </title>
+    <title> Hackathon </title>
 </head>
 <body>
 <div class="nav">
 <ul>
-  <li><a href="#ne">1806331</a></li>
+  <li><a href="#ne">1806507</a></li>
   <br><br><br>
   <li><a class="active" href="index.php"><img src="./Home.png"> Home</a></li>
   <li><a href="./aboutme.html"><img src="./Vector.png"> About Me</a></li>
@@ -29,9 +29,9 @@ $result = mysqli_query($conn,"SELECT * FROM students");
     <form id="form" role="search">
         <input type="text" id="search" name="search" value="search" />
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        From:<input type="date" id="b2" name="b2">
+        From:<input type="date" id="X2" name="X2">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        To:<input type="date" id="b2" name="b2">
+        To:<input type="date" id="X2" name="X2">
          <br>
     </div>
     </form>
@@ -40,7 +40,7 @@ $result = mysqli_query($conn,"SELECT * FROM students");
 <div class="container2">
     <table id="customers">
     <tr>
-	<th>Sl. No</th>
+	<th>Sl No.</th>
 	<th>Meeting Name</th>
 	<th>No of People attending</th>
 	<th>Date</th>
@@ -69,11 +69,11 @@ $result = mysqli_query($conn,"SELECT * FROM students");
         <div class="p1">
             <form method="post" action="process.php">
             <td>  </td>
-            <td><input type="text" name="name" size="7" value=""></td>
-            <td><input  type="text" name="no_people" size="7" value=""></td>
-            <td><input  type="date" name="date" size="7" value="date"></td>
-            <td><input  type="time" name="starttime" size="7" value="starttime"></td>
-            <td><input  type="time" name="endtime" size="7" value="endtime"></td>
+            <td><input type="text" name="name" size="5" value=""></td>
+            <td><input  type="text" name="no_people" size="5" value=""></td>
+            <td><input  type="date" name="date" size="5" value="date"></td>
+            <td><input  type="time" name="starttime" size="5" value="starttime"></td>
+            <td><input  type="time" name="endtime" size="5" value="endtime"></td>
             <td><input type="submit" name="save" class="as" value="Add"> </td>
             </form>
             </div>
